@@ -6,8 +6,7 @@ class Fgf < Formula
 
 
   def install
-    system "install", "go.mod"
-    system "go build", "./fgf"
+    system "install go.mod","go build && ./fgf"
 
   end
 
