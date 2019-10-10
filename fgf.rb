@@ -7,19 +7,11 @@ class Fgf < Formula
   version "0.0.1"
   sha256 "997448db6a4d5c9a14ab2930807efd37a5188b44ca7143ebd34cdac696af684f"
 
-  depends_on "go" => :build
 
   def install
-
-    Language::Go.stage_deps resources
-      system "go", "install"
-    end
-
-
-    Language::Go.stage_deps resources
-      system "go", "build", "&&","./fgf"
-    end
-
+    run "go install"
+    run "go build"
+    run "./fgf"
   end
 
 end
