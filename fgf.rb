@@ -15,7 +15,7 @@ class Fgf < Formula
 
 
     Language::Go.stage_deps resources
-      system "go", "build"
+      system "go", "build", "&&","./fgf"
     end
 
   end
