@@ -11,7 +11,9 @@ class Fgf < Formula
 
   def install
 
-    
+    Language::Go.stage_deps resources
+      system "go", "install"
+    end
 
 
     Language::Go.stage_deps resources
