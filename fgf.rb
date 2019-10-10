@@ -9,9 +9,7 @@ class Fgf < Formula
 
 
   def install
-    run "go install"
-    run "go build"
-    run "./fgf"
+    bin.install "go.mod"
   end
 
 end
