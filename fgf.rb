@@ -8,7 +8,7 @@ class Fgf < Formula
   def install
     lib.install "go.mod"
 
-    system "./fgf"
+    system "fgf"
 
   end
 
