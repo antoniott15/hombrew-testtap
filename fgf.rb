@@ -1,15 +1,16 @@
-# require "language/go"
-
-# class Fgf < Formula
-#   desc "CLI for google fonts installation in flutter"
-#   homepage ""
-#   url "https://github.com/antoniott15/fgf/archive/v1.0.0.tar.gz"
-#   version "0.0.1"
-#   sha256 "997448db6a4d5c9a14ab2930807efd37a5188b44ca7143ebd34cdac696af684f"
+class Fgf < Formula
+  desc "CLI for google fonts installation in flutter"
+  homepage ""
+  url "https://github.com/antoniott15/fgf/archive/0.0.1.tar.gz"
+  sha256 "ecc225e84a60eecf76a70ab6d7f516c2e8a4dc7a5a0f07bd693791399d61ec38"
 
 
-#   def install
-#     bin.install "go.mod"
-#   end
+  def install
+    lib.install "go.mod"
 
-# end
+    system "./fgf"
+
+  end
+
+
+end
