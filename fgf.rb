@@ -1,8 +1,8 @@
 class Fgf < Formula
   desc "CLI for google fonts installation in flutter"
   homepage ""
-  url "https://github.com/antoniott15/fgf/archive/v0.0.1.tar.gz"
-  sha256 "4df7a29948a3d33e1b6f50329ba73f3a9a2e4c391dbe66fb3011a172fcd131c2"
+  url "https://github.com/antoniott15/fgf/archive/0.0.2.tar.gz"
+  sha256 "d68ff9aece37701ea9b13475a41d4f5b1af69d119e015373edc666e4cc88f873"
 
 
   def install
